@@ -38,15 +38,12 @@ a,
   }
 }
 #header{
-  background-color: rgba(255, 123, 0, 0.205);
-  border-radius: 60px;
   position: relative;
-  font-family: Louis George Café;
   margin-left: 35px;
 }
 #Footer{
   margin-top: 750px;
-  background-color: rgba(255, 123, 0, 0.185);
-  font-family: Louis George Café;
+  background-color: rgba(255, 255, 255, 0.185);
+
   margin-left: 35px;
 }

@@ -1,10 +1,9 @@
 <template>
   <Grid>
-      <img :src="url" :alt="nombre">
+      <slot>Imagen</slot>
       <h2>{{ nombre }}</h2> 
       <h4>{{ descripcion }}</h4><br>
       <h3>{{ costo }}</h3><br>
-      <a :href="url" target="_blank">Comprar</a>
   </Grid>
 </template>
 
@@ -12,9 +11,6 @@
   import Grid from "./Grid.vue";
   export default{
   props: {
-      url: {
-          String,
-      },
       nombre: {
           String,
       },
@@ -32,20 +28,11 @@
 <style scopet>
 
   img{
-      width: 8  rem;
-      height: 8rem;
-      padding: 0.5rem;
-      background: snow;
-      border-radius: 30px;
+      width: 11rem;
+      height: 11rem;
+      padding: 0.1rem;
+      background: rgba(177, 177, 177, 0.297);
   }
-  a{
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      background: #ffe4c0cc;
-      padding: 0.3rem;
-      border-radius: 5px;
-      border: 1px solid #ffffff;
-      margin-bottom: 60px;
-  }
+ 
   
 </style>
